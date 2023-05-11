@@ -1,0 +1,55 @@
+plugins {
+    id 'org.springframework.boot' version '3.0.6'
+    id 'io.spring.dependency-management' version '1.1.0'
+    id 'com.bmuschko.docker-spring-boot-application' version '7.4.0'
+}
+
+apply plugin: "java"
+
+
+group = 'com.davefarrelly'
+version = project.hasProperty('BUILD_VERSION') ? project['BUILD_VERSION'] : '0.0.1-SNAPSHOT'
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(18))
+    }
+}
+
+ext.setProperty "serviceName", rootProject.name
+
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+
+    implementation.exclude group: 'org.springframework', module: 'spring-webmvc'
+}
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+    implementation 'org.springframework.cloud:spring-cloud-starter-bootstrap:4.0.2'
+
+    implementation 'ch.qos.logback.contrib:logback-jackson:0.1.5'
+    implementation 'ch.qos.logback.contrib:logback-json-classic:0.1.5'
+    implementation 'net.logstash.logback:logstash-logback-encoder:7.2'
+
+    implementation 'io.micrometer:micrometer-core:1.10.3'
+    implementation 'io.micrometer:micrometer-tracing:1.1.0'
+    implementation 'io.micrometer:micrometer-tracing-bridge-brave:1.1.0'
+
+
+    annotationProcessor 'org.projectlombok:lombok'
+}
+
+
+tasks.named('test') {
+    useJUnitPlatform()
+}

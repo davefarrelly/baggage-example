@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+  <property name="LOGS" value="./logs" />
+
+    <appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="net.logstash.logback.encoder.LogstashEncoder">
+            <includeTags>true</includeTags>
+            <includeMdcKeyName>USER_ID</includeMdcKeyName>
+            <fieldNames>
+                <levelValue>[ignore]</levelValue>
+                <thread>THREAD</thread>
+            </fieldNames>
+        </encoder>
+    </appender>
+
+  <appender name="FILE"
+    class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>${LOGS}/spring-boot-logger.log</file>
+    <encoder
+      class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+      <Pattern>%d %p %C{1} [%t] %m%n</Pattern>
+    </encoder>
+
+    <rollingPolicy
+      class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <fileNamePattern>${LOGS}/archived/spring-boot-logger-%d{yyyy-MM-dd}.%i.log
+      </fileNamePattern>
+      <timeBasedFileNamingAndTriggeringPolicy
+        class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+        <maxFileSize>20MB</maxFileSize>
+      </timeBasedFileNamingAndTriggeringPolicy>
+    </rollingPolicy>
+  </appender>
+
+
+  <root level="INFO">
+    <appender-ref ref="FILE" />
+    <appender-ref ref="Console" />
+  </root>
+
+  <logger name="com.accela" level="TRACE" additivity="false">
+    <appender-ref ref="FILE" />
+    <appender-ref ref="Console" />
+  </logger>
+
+</configuration>

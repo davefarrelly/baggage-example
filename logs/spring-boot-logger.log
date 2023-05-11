@@ -1,0 +1,41 @@
+2023-05-11 16:37:38,147 INFO o.s.b.SpringApplication [main] The following 2 profiles are active: "dev", "secrets-dev"
+2023-05-11 16:37:38,597 INFO o.s.c.c.s.GenericScope [main] BeanFactory id=2944583c-34bb-3588-990b-472c4ba3f12a
+2023-05-11 16:37:40,031 INFO o.s.c.c.u.InetUtils [main] Cannot determine local hostname
+2023-05-11 16:37:41,166 INFO o.s.c.c.u.InetUtils [main] Cannot determine local hostname
+2023-05-11 16:37:41,323 INFO o.s.b.w.e.n.NettyWebServer [main] Netty started on port 9890
+2023-05-11 16:37:42,440 INFO o.s.c.c.u.InetUtils [main] Cannot determine local hostname
+2023-05-11 16:37:43,574 INFO o.s.c.c.u.InetUtils [main] Cannot determine local hostname
+2023-05-11 16:37:43,586 INFO o.s.b.StartupInfoLogger [main] Started BaggageExample in 8.593 seconds (process running for 9.676)
+2023-05-11 16:38:52,810 INFO o.s.b.SpringApplication [main] The following 2 profiles are active: "dev", "secrets-dev"
+2023-05-11 16:38:53,140 INFO o.s.c.c.s.GenericScope [main] BeanFactory id=2944583c-34bb-3588-990b-472c4ba3f12a
+2023-05-11 16:38:54,600 INFO o.s.c.c.u.InetUtils [main] Cannot determine local hostname
+2023-05-11 16:38:55,730 INFO o.s.c.c.u.InetUtils [main] Cannot determine local hostname
+2023-05-11 16:38:55,890 INFO o.s.b.w.e.n.NettyWebServer [main] Netty started on port 9890
+2023-05-11 16:38:57,008 INFO o.s.c.c.u.InetUtils [main] Cannot determine local hostname
+2023-05-11 16:38:58,132 INFO o.s.c.c.u.InetUtils [main] Cannot determine local hostname
+2023-05-11 16:38:58,143 INFO o.s.b.StartupInfoLogger [main] Started BaggageExample in 8.378 seconds (process running for 8.968)
+2023-05-11 16:40:11,296 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-05-11 16:40:11,621 INFO o.s.c.c.s.GenericScope [main] BeanFactory id=9b13db22-9df7-32c1-a903-311d0641a0bb
+2023-05-11 16:40:13,007 INFO o.s.c.c.u.InetUtils [main] Cannot determine local hostname
+2023-05-11 16:40:14,128 INFO o.s.c.c.u.InetUtils [main] Cannot determine local hostname
+2023-05-11 16:40:14,274 INFO o.s.b.w.e.n.NettyWebServer [main] Netty started on port 8080
+2023-05-11 16:40:15,390 INFO o.s.c.c.u.InetUtils [main] Cannot determine local hostname
+2023-05-11 16:40:16,571 INFO o.s.c.c.u.InetUtils [main] Cannot determine local hostname
+2023-05-11 16:40:16,584 INFO o.s.b.StartupInfoLogger [main] Started BaggageExample in 8.23 seconds (process running for 8.85)
+2023-05-11 16:40:59,380 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-05-11 16:40:59,858 INFO o.s.c.c.s.GenericScope [main] BeanFactory id=9b13db22-9df7-32c1-a903-311d0641a0bb
+2023-05-11 16:41:01,475 INFO o.s.c.c.u.InetUtils [main] Cannot determine local hostname
+2023-05-11 16:41:02,626 INFO o.s.c.c.u.InetUtils [main] Cannot determine local hostname
+2023-05-11 16:41:02,817 INFO o.s.b.w.e.n.NettyWebServer [main] Netty started on port 8080
+2023-05-11 16:41:03,991 INFO o.s.c.c.u.InetUtils [main] Cannot determine local hostname
+2023-05-11 16:42:09,190 INFO o.s.c.c.u.InetUtils [main] Cannot determine local hostname
+2023-05-11 16:42:09,209 INFO o.s.b.StartupInfoLogger [main] Started BaggageExample in 73.242 seconds (process running for 73.928)
+2023-05-11 16:42:29,457 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-05-11 16:42:30,064 INFO o.s.c.c.s.GenericScope [main] BeanFactory id=0414f017-f460-3e46-aeb6-f727bef1d7f0
+2023-05-11 16:42:31,534 INFO o.s.c.c.u.InetUtils [main] Cannot determine local hostname
+2023-05-11 16:42:31,611 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-11 16:42:33,081 INFO o.s.c.c.u.InetUtils [main] Cannot determine local hostname
+2023-05-11 16:42:33,423 INFO o.s.b.w.e.n.NettyWebServer [main] Netty started on port 8080
+2023-05-11 16:42:34,576 INFO o.s.c.c.u.InetUtils [main] Cannot determine local hostname
+2023-05-11 16:42:35,771 INFO o.s.c.c.u.InetUtils [main] Cannot determine local hostname
+2023-05-11 16:42:35,817 INFO o.s.b.StartupInfoLogger [main] Started BaggageExample in 9.348 seconds (process running for 10.079)
