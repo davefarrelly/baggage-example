@@ -1,10 +1,9 @@
 management:
   tracing:
-    enabled: false
+    enabled: true
     baggage:
-      enabled: false
+      enabled: true
       correlation:
         enabled: true
         fields: USER_ID
       remote-fields: USER_ID
-
